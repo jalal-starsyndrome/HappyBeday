@@ -184,81 +184,34 @@ button{
 </div>
 
 <script>
-/* ===== EDIT MESSAGE HERE ===== */
-const receiverName = "My Love 🤍";
 const message =
 `Bismillāh.
 
-HAPPY BIRTHDAY SAYANGGGGGGGG, my love  🤍
+Happy birthday, my love 🤍
 
-On your birthday, I pray Allah protects your heart,
-eases your worries, and guides every step you take.
+On your birthday, I ask Allah to protect your heart,
+ease your worries, and guide every step you take.
 
-May He grant you peace when life feels heavy,
+May He give you peace when life feels heavy,
 strength when you feel tired,
 and barakah in everything you do.
 
-For your exams, may Allah make your mind clear,
-your efforts meaningful,
-and your results a source of ease.
+For your exams, may Allah grant you clarity,
+focus your mind, and reward your effort.
 
 I am grateful for you, today and always.
 May Allah keep you under His care.
 
-Semoga hari2 awak akan lebih baik sentiasa
-tk kirala bila waktu ada org or tkda, 
-klau org yg selalu buat awak sedih, buat awak sakit, 
-semoga oneday Tuhan berikan awak yg lebih baik dpt bahagiakan awak,
-Maaf sbb tk mampu bgi hadiah bernilai, hadiah org biasa2 saja,
-Org mintak maaf klau perangai org selalu buat awak tk tahan, sakit hati,
-Org tktau time awak dpt ni kita akan decide bersama lgi or tak, 
-klau ya, org tk jamin pon bole berubah ke tak, bknnyer org tknk berubah,
-tgokla mcm mana...org sayang awak, tpi org tk pandai nk accept demand org yg tkde depan mata
-awak kene sabar smpai kita jumpa brula org lgi better pujuk.
-Andai kata kita buat haluan masing2, org harap awak punye hidup lebih baik,
-inshaaAllah awak akan jumpa lebih baik, yg lebih pandai buat awak dihargai...
-Org mintak maaf....
-
-Ishhhh ni beday awak utk happy2, mne lehh sedih2...
-
-HAPPY 23rd BIRTHDAY SITI SOPEAH SAYANGG 🤍🤍🤍🤍🤍
-Hope you recieved this message in a good health and blessings,
-Today is a reminder of how precious your presence is in this world.
-I don’t just celebrate the day you were born 
-I’m grateful for the kindness you carry, the patience you show,
-and the quiet strength you have even when things are not easy.
-
-On your birthday, my duʿāʾ for you is simple and sincere
-May Allah watch over you in moments you feel strong
-and especially in moments you feel uncertain.
-May He make your heart steady, your intentions pure,
-and your path clear even when the destination feels far.
-
-Thank you for being the person you are 
-for your sincerity, your gentleness, and your warmth.
-You are a blessing in my life in ways I may not always say,
-but I feel it every day.
-
-May this new year of your life be filled with growth,
-protected from harm, and guided toward what is best for you.
-May Allah keep you safe, surround you with goodness,
-and grant you a future filled with light.
-
-
 Āmīn.
 
-— From someone who loves you 🤍`;
-/* ============================ */
+— From someone who loves you`;
 
 const env = document.getElementById("env");
 const modal = document.getElementById("modal");
 const typed = document.getElementById("typed");
 const cursor = document.getElementById("cursor");
-const toLine = document.getElementById("toLine");
 const bgm = document.getElementById("bgm");
 const fxLayer = document.getElementById("fxLayer");
-
-toLine.textContent = "To: " + receiverName;
 
 let open=false, i=0, timer=null;
 
@@ -307,7 +260,6 @@ function closeLetter(){
 }
 
 document.getElementById("openBtn").onclick=openLetter;
-document.getElementById("musicBtn").onclick=()=> bgm.paused ? bgm.play() : bgm.pause();
 document.getElementById("heartBtn").onclick=()=>{
   const r=env.getBoundingClientRect();
   hearts(r.left+r.width/2,r.top+r.height/2,22);
